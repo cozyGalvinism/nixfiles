@@ -6,5 +6,9 @@
     package = pkgs.hyprland;
 
     systemd.enable = true;
+
+    settings = {
+      "$mod" = "SUPER";
+    };
   };
 }
