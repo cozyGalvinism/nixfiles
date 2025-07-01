@@ -15,7 +15,6 @@
 
   services.xserver = {
     enable = true;
-    videoDrivers = ["nvidia"];
   };
   services.displayManager.sddm = {
     enable = true;
@@ -23,6 +22,9 @@
       enable = true;
     };
   };
+
+  services.qemuGuest.enable = true;
+  services.spice-vdagentd.enable = true;
 
   services.openssh = {
     enable = true;
