@@ -41,6 +41,7 @@
             home-manager.users.cozygalvinism = {
               imports = [
                 ./home/common/base.nix
+                ./home/vmnix/hyprland.nix
               ];
             };
           }
