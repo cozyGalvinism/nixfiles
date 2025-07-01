@@ -11,6 +11,11 @@
     settings = {
       "$mod" = "SUPER";
 
+      input = {
+        kb_layout = "de";
+        kb_variant = "nodeadkeys";
+      };
+
       bind = [
         "$mod, T, exec, kitty"
       ]
