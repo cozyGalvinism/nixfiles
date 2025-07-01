@@ -1,4 +1,4 @@
-{ config, pkgs, ... }:
+{ config, pkgs, lib, ... }:
 
 {
   environment.systemPackages = with pkgs; [
@@ -12,7 +12,7 @@
   };
   nixpkgs.config.allowUnfree = true;
 
-  console.keyMap = mkDefault "de-latin1-nodeadkeys";
+  console.keyMap = lib.mkDefault "de-latin1-nodeadkeys";
 
   users.users = {
     cozygalvinism = {
