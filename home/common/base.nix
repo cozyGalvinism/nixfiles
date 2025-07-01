@@ -6,10 +6,4 @@
   home.stateVersion = "25.05";
 
   home.packages = with pkgs; [];
-
-  programs.git = {
-    enable = true;
-    user.name = "cozygalvinism";
-    user.email = "jean@der-capta.in";
-  };
 }
