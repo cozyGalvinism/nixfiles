@@ -14,6 +14,11 @@
   networking.firewall.enable = false;
 
   services.xserver = {
+    enable = true;
+    displayManager.sddm = {
+      enable = true;
+      wayland = true;
+    };
     videoDrivers = ["nvidia"];
   };
 
