@@ -15,11 +15,13 @@
 
   services.xserver = {
     enable = true;
+    videoDrivers = [ "qxl" ];
     xkb = {
       layout = "de";
       variant = "nodeadkeys";
     };
   };
+
   services.displayManager.sddm = {
     enable = true;
     wayland = {
