@@ -15,6 +15,10 @@
 
   services.xserver = {
     enable = true;
+    xkb = {
+      layout = "de";
+      variant = "nodeadkeys";
+    };
   };
   services.displayManager.sddm = {
     enable = true;
