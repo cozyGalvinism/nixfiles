@@ -17,6 +17,14 @@
     videoDrivers = ["nvidia"];
   };
 
+  services.openssh = {
+    enable = true;
+    settings = {
+      PasswordAuthentication = false;
+      KbdInteractiveAuthentication = false;
+    };
+  };
+
   hardware.nvidia = {
     modesetting.enable = true;
     open = true;
