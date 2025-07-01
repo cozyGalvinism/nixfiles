@@ -11,7 +11,9 @@
     settings = {
       "$mod" = "SUPER";
 
-      bind = []
+      bind = [
+        "$mod, Enter, exec, kitty"
+      ]
       ++ (
         builtins.concatLists (builtins.genList (i:
           let ws = i + 1;
