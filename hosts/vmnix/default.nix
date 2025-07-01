@@ -15,13 +15,13 @@
 
   services.xserver = {
     enable = true;
-    displayManager.sddm = {
-      enable = true;
-      wayland = {
-        enable = true;
-      };
-    };
     videoDrivers = ["nvidia"];
+  };
+  services.displayManager.sddm = {
+    enable = true;
+    wayland = {
+      enable = true;
+    };
   };
 
   services.openssh = {
