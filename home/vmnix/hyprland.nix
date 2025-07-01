@@ -16,6 +16,10 @@
         kb_variant = "nodeadkeys";
       };
 
+      monitor = [
+        "Virtual-1, 1920x1080x60, 0x0, 1"
+      ];
+
       bind = [
         "$mod, T, exec, kitty"
       ]
