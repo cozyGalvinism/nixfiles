@@ -17,7 +17,9 @@
     enable = true;
     displayManager.sddm = {
       enable = true;
-      wayland = true;
+      wayland = {
+        enable = true;
+      };
     };
     videoDrivers = ["nvidia"];
   };
